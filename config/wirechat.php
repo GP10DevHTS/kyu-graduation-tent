@@ -52,14 +52,14 @@ return [
     'show_new_group_modal_button' => true,
     'allow_chats_search' => true,
     'allow_media_attachments' => true,
-    'allow_file_attachments' => true,
+    // 'allow_file_attachments' => true,
     
 
     /**
      * User Searchable Fields:
      * Fields to query when searching for users in Wirechat.
      */
-    'user_searchable_fields' => ['name'],
+    'user_searchable_fields' => ['name', 'email'],
 
     /**
      * Maximum Group Members:
