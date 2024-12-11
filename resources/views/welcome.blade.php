@@ -35,7 +35,7 @@
                 </a>
 
                 <div class="flex w-1/2 justify-end content-center">
-                    <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                    {{-- <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
                         href="https://twitter.com/intent/tweet?url=#">
                         <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <path
@@ -49,13 +49,30 @@
                             <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z">
                             </path>
                         </svg>
-                    </a>
+                    </a> --}}
+                    {{-- @if (Route::has('login')) --}}
+                        @auth
+                            <a href="{{ url('/dashboard') }}"
+                                class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                        @else
+                            <a href="{{ route('login') }}"
+                                class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}"
+                                    class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                            @endif
+                        @endauth
+                        
+                    {{-- @else
+                        
+                    @endif --}}
                 </div>
             </div>
         </div>
 
         <!--Main-->
-        <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div class="container pt-18 md:pt-24 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
                 <h1
@@ -72,7 +89,7 @@
                     unforgettable!
                 </p>
 
-                @livewire('home.signup-form')
+                {{-- @livewire('home.signup-form') --}}
                 
             </div>
 

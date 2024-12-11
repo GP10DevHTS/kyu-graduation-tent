@@ -20,7 +20,7 @@
                         {{ __('Graduands') }}
                     </x-nav-link>
 
-                    <x-nav-link href="{{ route('chats') }}" :active="request()->routeIs('chats')">
+                    <x-nav-link href="{{ route('chatify') }}" :active="request()->routeIs('chatify')">
                         {{ __('Chats') }}
                     </x-nav-link>
                 </div>
@@ -155,7 +155,7 @@
                 {{ __('Graduands') }}
             </x-responsive-nav-link>
 
-            <x-responsive-nav-link href="{{ route('chats') }}" :active="request()->routeIs('chats')">
+            <x-responsive-nav-link href="{{ route('chatify') }}" :active="request()->routeIs('chatify')">
                 {{ __('Chats') }}
             </x-responsive-nav-link>
         </div>
