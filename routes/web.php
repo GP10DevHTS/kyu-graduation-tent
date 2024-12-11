@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Graduands\ListAllGraduands;
+use App\Livewire\Tents\MyGradTent;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,5 @@ Route::middleware([
     Route::redirect('/dashboard', 'graduands')->name('dashboard');
 
     Route::get('/graduands', ListAllGraduands::class)->name('graduands.list');
+    Route::get('/my-tent', MyGradTent::class)->name('my-tent');
 });

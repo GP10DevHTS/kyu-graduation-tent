@@ -23,6 +23,10 @@
                     <x-nav-link href="{{ route('chatify') }}" :active="request()->routeIs('chatify')">
                         {{ __('Chats') }}
                     </x-nav-link>
+
+                    <x-nav-link href="{{ route('my-tent') }}" :active="request()->routeIs('my-tent')">
+                        {{ __('My Tent') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -157,6 +161,10 @@
 
             <x-responsive-nav-link href="{{ route('chatify') }}" :active="request()->routeIs('chatify')">
                 {{ __('Chats') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link href="{{ route('my-tent') }}" :active="request()->routeIs('my-tent')">
+                {{ __('My Tent') }}
             </x-responsive-nav-link>
         </div>
 

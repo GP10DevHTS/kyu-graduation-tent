@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c7e341f1517b6a7163701bf4bb1f0cc",
+    "content-hash": "b3c923ec7cb0a93463dc482c25fb7538",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -7145,6 +7145,68 @@
                 }
             ],
             "time": "2024-11-08T15:48:14+00:00"
+        },
+        {
+            "name": "tauseedzaman/chaitify-group",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tauseedzaman/chaitify-group.git",
+                "reference": "6ab623054282d48ca35061e50e8a8028d6ab7899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tauseedzaman/chaitify-group/zipball/6ab623054282d48ca35061e50e8a8028d6ab7899",
+                "reference": "6ab623054282d48ca35061e50e8a8028d6ab7899",
+                "shasum": ""
+            },
+            "require": {
+                "pusher/pusher-php-server": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Chatify\\ChatifyServiceProvider"
+                    ],
+                    "aliases": {
+                        "Chatify": "Chatify\\Facades\\ChatifyMessenger"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Chatify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tauseed zaman",
+                    "email": "tauseedzaman00@gmail.com"
+                }
+            ],
+            "description": "A package for Laravel PHP Framework to add a complete real-time chat system.",
+            "homepage": "https://github.com/tauseedzaman/chaitify-group",
+            "keywords": [
+                "Messenger",
+                "chat",
+                "chatify",
+                "conversations",
+                "laravel",
+                "php",
+                "pusher",
+                "real-time",
+                "realtime"
+            ],
+            "support": {
+                "issues": "https://github.com/tauseedzaman/chaitify-group/issues",
+                "source": "https://github.com/tauseedzaman/chaitify-group/tree/v1.0"
+            },
+            "time": "2023-08-13T02:16:41+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
