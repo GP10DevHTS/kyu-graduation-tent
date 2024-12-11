@@ -24,8 +24,8 @@ class ListAllGraduands extends Component
     }
 
     public function createChat($id){
-        $conversation = auth()->user()->createConversationWith(User::find($id));
+        // $conversation = auth()->user()->createConversationWith(User::find($id));
 
-        $this->redirectRoute('chat', ['conversation_id' => $conversation->id]);
+        $this->redirect('chatify/'.$id);
     }
 }
