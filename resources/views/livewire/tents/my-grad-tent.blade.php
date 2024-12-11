@@ -39,14 +39,16 @@
 
                     {{-- Messages Container --}}
                     <div class="p-4 max-h-[600px] overflow-y-auto">
-                        @forelse($groupMessages as $message)
+                        <div id="disqus_thread"></div>
+
+                        {{-- @forelse($groupMessages as $message)
                             <div id="disqus_thread"></div>
 
                         @empty
                             <div class="text-center text-gray-500 py-4">
                                 No messages yet. Start the conversation!
                             </div>
-                        @endforelse
+                        @endforelse --}}
                     </div>
 
 
