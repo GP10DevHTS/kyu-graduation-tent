@@ -1,4 +1,4 @@
-<div class="p-4 bg-gray-100 dark:bg-gray-800 min-h-screen" wire:poll>
+<div class="p-4 bg-gray-100 dark:bg-gray-800 min-h-screen">
     <div class="text-center">
         <div class="grid grid-cols-2">
             <div>
