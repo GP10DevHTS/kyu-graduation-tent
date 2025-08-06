@@ -8,4 +8,6 @@ use Chatify\Traits\UUID;
 class ChFavorite extends Model
 {
     use UUID;
+        protected $guarded = [];
+
 }

@@ -7,6 +7,8 @@ use Illuminate\Support\Str;
 
 class Group extends Model
 {
+    protected $guarded = [];
+    
     protected static function boot()
     {
         parent::boot();
